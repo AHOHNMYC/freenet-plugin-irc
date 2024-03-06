@@ -7,8 +7,7 @@
 	<property name="dist" location="dist"/>
 
 	<!-- This location MUST point to a freenet jar. Change it if needed. -->
-	<property name="freenetjar" value="../fred/lib/freenet-cvs-snapshot.jar"/>
-	<property name="freenet-extjar" value="../fred/lib/freenet-ext.jar"/>
+	<property name="freenetjar" value="../fred/dist/freenet.jar"/>
 	<property name="wotjar" value="../plugin-WoT-staging/dist/WoT.jar"/>
 
 	<target name="compile"> 
@@ -22,7 +21,6 @@
 			</sourcepath>
 			<classpath>
 				<pathelement location="${freenetjar}"/>
-				<pathelement location="${freenet-extjar}"/>
 				<pathelement location="${wotjar}"/>
 			</classpath>
 		</javac>
